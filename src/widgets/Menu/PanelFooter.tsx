@@ -59,7 +59,6 @@ const PanelFooter: React.FC<Props> = ({
   pushNav,
   toggleTheme,
   isDark,
-  cakePriceUsd,
   currentLang,
   langs,
   setLang,
@@ -77,14 +76,6 @@ const PanelFooter: React.FC<Props> = ({
   return (
     <Container>
       <SocialEntry>
-        {cakePriceUsd ? (
-          <PriceLink href="https://popcornswap.com" target="_blank">
-            <img src="https://image.popcornswap.com/square.png" />
-            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
-          </PriceLink>
-        ) : (
-          <Skeleton width={80} height={24} />
-        )}
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
