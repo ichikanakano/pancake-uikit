@@ -79,7 +79,7 @@ const PanelFooter: React.FC<Props> = ({
       <SocialEntry>
         {cakePriceUsd ? (
           <PriceLink href="https://popcornswap.com" target="_blank">
-            <img src="https://image.popcornswap.com/logo.png" />
+            <img src="https://image.popcornswap.com/square.png" />
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (
